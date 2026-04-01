@@ -1,0 +1,18 @@
+{
+  "branch": "main",
+  "depends_recipe": "",
+  "description_control": "Upgrade your system Firmware",
+  "description_recipe": "Upgrade your system Firmware",
+  "history_source_dir": "FirmwareUpgrade",
+  "internal_package_name": "enigma2-plugin-systemplugins-firmwareupgrade",
+  "module_dir_name": "FirmwareUpgrade",
+  "output_subdir": "FirmwareUpgrade",
+  "package_name": "enigma2-plugin-systemplugins-firmwareupgrade",
+  "plugin_src_rel": "FirmwareUpgrade",
+  "python_package": "FirmwareUpgrade",
+  "rdepends_recipe": "",
+  "replaces": "",
+  "repo_name": "FirmwareUpgrade",
+  "rrecommends": "",
+  "rreplaces": ""
+}
