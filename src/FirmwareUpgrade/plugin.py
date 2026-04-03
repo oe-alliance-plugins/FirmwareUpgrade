@@ -625,9 +625,9 @@ class FUFilebrowser(Screen):
 		t = ''
 		self["file_list"].changeDir("/tmp/")
 		self["file_list"].moveToIndex(0)
-		while cmp(self["file_list"].getFilename(), self.gbin) != 0:
+		while self["file_list"].getFilename() != self.gbin:
 			self["file_list"].down()
-			if cmp(t, self["file_list"].getFilename()) == 0:
+			if t == self["file_list"].getFilename():
 				break
 			t = self["file_list"].getFilename()
 
