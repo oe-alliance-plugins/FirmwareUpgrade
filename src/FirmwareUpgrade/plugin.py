@@ -514,7 +514,7 @@ class FUFilebrowser(Screen):
 				print(self.firmware, ",", self["file_list"].getFilename())
 				self.session.open(MessageBox, _("You choose the incorrect file. "), MessageBox.TYPE_INFO)
 				return
-		except:
+		except Exception:
 			print(self.firmware, ",", self["file_list"].getFilename())
 			self.session.open(MessageBox, _("You choose the incorrect file. "), MessageBox.TYPE_INFO)
 			return
