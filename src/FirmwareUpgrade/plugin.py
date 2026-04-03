@@ -8,11 +8,10 @@ from six.moves import urllib
 
 from Plugins.Plugin import PluginDescriptor
 
-from Components.config import config, getConfigListEntry, ConfigSubsection, ConfigText, ConfigSelection, ConfigYesNo, ConfigText
+from Components.config import getConfigListEntry, ConfigSelection
 from Components.ConfigList import ConfigListScreen
 from Components.ActionMap import ActionMap
 from Components.Sources.StaticText import StaticText
-from Components.Pixmap import Pixmap
 from Components.Label import Label
 
 from Components.FileList import FileList
@@ -21,8 +20,7 @@ from Components.Slider import Slider
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 
-from enigma import ePoint, eConsoleAppContainer, eTimer, getDesktop
-from Tools.Directories import resolveFilename, SCOPE_PLUGINS
+from enigma import eTimer
 
 fwlist = None
 fwdata = None
@@ -553,7 +551,7 @@ class FUFilebrowser(Screen):
 		opener = urllib.URLopener()
 		try:
 			opener.open(uri)
-		except:
+		except Exception:
 			#self.session.open(MessageBox, _("File not found in this URL:\n%s"%(uri)), MessageBox.TYPE_INFO, timeout = 10)
 			print("[FirmwareUpgrade] - Fail to download. URL :", uri)
 			self.session.open(MessageBox, _(errmsg), MessageBox.TYPE_INFO, timeout=10)
@@ -561,7 +559,7 @@ class FUFilebrowser(Screen):
 			return False
 		try:
 			f, h = urlretrieve(uri, tar, doHook)
-		except IOError as msg:
+		except OSError as msg:
 			#self.session.open(MessageBox, _(str(msg)), MessageBox.TYPE_INFO, timeout = 10)
 			print("[FirmwareUpgrade] - Fail to download. ERR_MSG :", str(msg))
 			self.session.open(MessageBox, _(errmsg), MessageBox.TYPE_INFO, timeout=10)
@@ -581,7 +579,7 @@ class FUFilebrowser(Screen):
 			try:
 				if os.path.splitext(tar)[1] != ".files":
 					self["status"].setText("Downloaded : %s\nPress OK to select, Press Cancel to exit." % (tar))
-			except:
+			except Exception:
 				pass
 		# target
 		global fwdata
@@ -598,7 +596,7 @@ class FUFilebrowser(Screen):
 			if l.startswith(machine):
 				try:
 					target_path = l.split("=")[1].strip()
-				except:
+				except Exception:
 					target_path = ""
 					pass
 		file.close()
