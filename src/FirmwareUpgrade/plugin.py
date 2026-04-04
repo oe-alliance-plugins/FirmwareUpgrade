@@ -592,13 +592,12 @@ class FUFilebrowser(Screen):
 
 		target_path = ""
 		file = open("/tmp/" + root_file)
-		for l in file.readlines():
-			if l.startswith(machine):
+		for line in file.readlines():
+			if line.startswith(machine):
 				try:
-					target_path = l.split("=")[1].strip()
+					target_path = line.split("=")[1].strip()
 				except Exception:
 					target_path = ""
-					pass
 		file.close()
 		if target_path == "":
 			self.session.open(MessageBox, _("Firmware does not exist."), MessageBox.TYPE_INFO)
