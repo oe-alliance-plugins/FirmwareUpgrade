@@ -558,14 +558,14 @@ class FUFilebrowser(Screen):
 			del opener
 			return False
 		try:
-			f, h = urlretrieve(uri, tar, doHook)
+			_, _ = urlretrieve(uri, tar, doHook)
 		except OSError as msg:
 			# self.session.open(MessageBox, _(str(msg)), MessageBox.TYPE_INFO, timeout = 10)
 			print("[FirmwareUpgrade] - Fail to download. ERR_MSG :", str(msg))
 			self.session.open(MessageBox, _(errmsg), MessageBox.TYPE_INFO, timeout=10)
-			del opener
+			del opener  # noqa: F821
 			return False
-		del opener
+		del opener  # noqa: F821
 		return True
 
 	def runDownloading(self):
