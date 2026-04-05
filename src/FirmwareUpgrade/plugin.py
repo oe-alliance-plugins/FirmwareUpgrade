@@ -1,10 +1,10 @@
-from __future__ import print_function
 # for localized messages
 from . import _
 
+import fcntl
 import os
-from six.moves.urllib.request import urlretrieve
-from six.moves import urllib
+from urllib.request import urlretrieve, URLopener
+import _thread
 
 from Plugins.Plugin import PluginDescriptor
 
@@ -65,9 +65,6 @@ if os.path.exists("/proc/stb/info/vumodel"):
 				"fpga": ["http://archive.vuplus.com/download/fpga", "fpga.files", "/dev/fpga_dp;/dev/misc/dp;"], "fp": ["http://archive.vuplus.com/download/fp", "fp.files", "/dev/bcm_mu;"]
 			}
 
-import os
-import fcntl
-from six.moves import _thread
 
 STATUS_READY = 0
 STATUS_DONE = 1
@@ -548,7 +545,7 @@ class FUFilebrowser(Screen):
 		def doHook(blockNumber, blockSize, totalSize):
 			if blockNumber * blockSize > totalSize and cbfunc is not None:
 				cbfunc(tar)
-		opener = urllib.URLopener()
+		opener = URLopener()
 		try:
 			opener.open(uri)
 		except Exception:
