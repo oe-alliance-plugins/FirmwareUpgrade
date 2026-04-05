@@ -3,7 +3,7 @@ from . import _
 
 import fcntl
 import os
-from urllib.request import urlretrieve, URLopener
+from urllib.request import urlretrieve, urlopen
 import _thread
 
 from Plugins.Plugin import PluginDescriptor
@@ -545,14 +545,14 @@ class FUFilebrowser(Screen):
 		def doHook(blockNumber, blockSize, totalSize):
 			if blockNumber * blockSize > totalSize and cbfunc is not None:
 				cbfunc(tar)
-		opener = URLopener()
+
+		# Check if URL is accessible
 		try:
-			opener.open(uri)
-		except Exception:
+			urlopen(uri)
+		except (Exception):
 			# self.session.open(MessageBox, _("File not found in this URL:\n%s"%(uri)), MessageBox.TYPE_INFO, timeout = 10)
 			print("[FirmwareUpgrade] - Fail to download. URL :", uri)
 			self.session.open(MessageBox, _(errmsg), MessageBox.TYPE_INFO, timeout=10)
-			del opener
 			return False
 		try:
 			_, _ = urlretrieve(uri, tar, doHook)
@@ -560,9 +560,7 @@ class FUFilebrowser(Screen):
 			# self.session.open(MessageBox, _(str(msg)), MessageBox.TYPE_INFO, timeout = 10)
 			print("[FirmwareUpgrade] - Fail to download. ERR_MSG :", str(msg))
 			self.session.open(MessageBox, _(errmsg), MessageBox.TYPE_INFO, timeout=10)
-			del opener  # noqa: F821
 			return False
-		del opener  # noqa: F821
 		return True
 
 	def runDownloading(self):
