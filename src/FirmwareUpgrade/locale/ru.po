@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: litvcom\n"
 "Language-Team: \n"
@@ -16,47 +16,62 @@ msgstr ""
 "X-Generator: Poedit 1.8.7\n"
 "X-Poedit-SourceCharset: iso-8859-15\n"
 
+#: ../plugin.py:407
 #, python-format
 msgid "%d / 100"
 msgstr ""
 
+#: ../plugin.py:370
 msgid "Can't cancel during upgrade!!"
 msgstr "Нельзя отменить в процессе обновления!!"
 
+#: ../plugin.py:520
 msgid "Can't find /usr/bin/md5sum"
 msgstr "Не удается найти /usr/bin/md5sum"
 
+#: ../plugin.py:501
 msgid "Can't found MD5 file."
 msgstr "Не удается найти файл MD5"
 
+#: ../plugin.py:498
 msgid "Can't found binary file."
 msgstr "Не удается найти бинарный файл"
 
+#: ../plugin.py:789
 msgid "Can't found device file!!"
 msgstr "Файл устройства не найден!!"
 
+#: ../plugin.py:637
 msgid "Can't found model name."
 msgstr "Не удается найти название модели"
 
 #
+#: ../plugin.py:710
 msgid "Close"
 msgstr "Закрыть"
 
+#: ../plugin.py:439
 msgid "Do you want to remove binary data?"
 msgstr "Вы хотите удалить бинарные данные?"
 
+#: ../plugin.py:457
 msgid "Download"
 msgstr "Скачать"
 
+#: ../plugin.py:721
 msgid "Duo/Solo was not support."
 msgstr "Duo/Solo не поддерживаются"
 
+#: ../plugin.py:34 ../plugin.py:41 ../plugin.py:48 ../plugin.py:55
+#: ../plugin.py:62
 msgid "FPGA"
 msgstr "ППВМ"
 
+#: ../plugin.py:405
 msgid "Fail to upgrade!! Retry!!"
 msgstr "Не удалось обновить!! Повторите попытку!!"
 
+#: ../plugin.py:527
 #, python-format
 msgid ""
 "Fail to verify data file. \n"
@@ -67,35 +82,46 @@ msgstr ""
 "файл[%s]\n"
 "md5[%s]"
 
+#: ../plugin.py:731
 msgid "Firmware"
 msgstr "Прошивка"
 
+#: ../plugin.py:878
 msgid "Firmware Upgrade"
 msgstr "Обновление прошивки"
 
+#: ../plugin.py:598
 msgid "Firmware does not exist."
 msgstr "Нет прошивки."
 
+#: ../plugin.py:34 ../plugin.py:48 ../plugin.py:55 ../plugin.py:62
 msgid "Front Processor"
 msgstr "Фронтпроцессор"
 
+#: ../plugin.py:782
 msgid "No selected binary data!!"
 msgstr "Бинарные данные не выбраны!!"
 
+#: ../plugin.py:372
 msgid "Status : 0%"
 msgstr "Статус : 0%"
 
+#: ../plugin.py:410
 msgid "Success. Press OK to exit."
 msgstr "Выполнено. Нажмите кнопку OK, чтобы выйти."
 
+#: ../plugin.py:723
 msgid "Upgrade"
 msgstr "Обновить"
 
+#: ../plugin.py:878
 msgid "Upgrade Firmware.."
 msgstr "Обновление встроенного ПО"
 
+#: ../plugin.py:55
 msgid "VFD Controller"
 msgstr "ЧУП контроллер"
 
+#: ../plugin.py:512 ../plugin.py:516
 msgid "You choose the incorrect file. "
 msgstr "Выбран некорректный файл"

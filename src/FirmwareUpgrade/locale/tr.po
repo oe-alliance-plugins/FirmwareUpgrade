@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: 2016-05-07 13:21+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: CÜNEYT OCAKLILAR <ocaklilar@gmail.com>\n"
@@ -17,47 +17,62 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Bookmarks: 2450,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
+#: ../plugin.py:407
 #, python-format
 msgid "%d / 100"
 msgstr "%d / 100"
 
+#: ../plugin.py:370
 msgid "Can't cancel during upgrade!!"
 msgstr "Yükseltme sırasında iptal edilemez!!"
 
+#: ../plugin.py:520
 msgid "Can't find /usr/bin/md5sum"
 msgstr " /usr/bin/md5sum bulunamadı"
 
+#: ../plugin.py:501
 msgid "Can't found MD5 file."
 msgstr "MD5 dosyası bulunamadı."
 
+#: ../plugin.py:498
 msgid "Can't found binary file."
 msgstr "binary dosyası bulunamadı."
 
+#: ../plugin.py:789
 msgid "Can't found device file!!"
 msgstr "Aygıt dosyası bulunamadı!!"
 
+#: ../plugin.py:637
 msgid "Can't found model name."
 msgstr "Model adı bulunamadı."
 
 #
+#: ../plugin.py:710
 msgid "Close"
 msgstr "Kapat"
 
+#: ../plugin.py:439
 msgid "Do you want to remove binary data?"
 msgstr "Binary bilgisini kaldırmak istiyor musunuz?"
 
+#: ../plugin.py:457
 msgid "Download"
 msgstr "İndir"
 
+#: ../plugin.py:721
 msgid "Duo/Solo was not support."
 msgstr ""
 
+#: ../plugin.py:34 ../plugin.py:41 ../plugin.py:48 ../plugin.py:55
+#: ../plugin.py:62
 msgid "FPGA"
 msgstr "FPGA"
 
+#: ../plugin.py:405
 msgid "Fail to upgrade!! Retry!!"
 msgstr "Yükleme hatası!! Tekrar dene!!"
 
+#: ../plugin.py:527
 #, python-format
 msgid ""
 "Fail to verify data file. \n"
@@ -68,35 +83,46 @@ msgstr ""
 "dosya[%s]\n"
 "md5[%s]"
 
+#: ../plugin.py:731
 msgid "Firmware"
 msgstr "Yazılım"
 
+#: ../plugin.py:878
 msgid "Firmware Upgrade"
 msgstr "Yazılım Yükseltme"
 
+#: ../plugin.py:598
 msgid "Firmware does not exist."
 msgstr "Yazılım mevcut değil."
 
+#: ../plugin.py:34 ../plugin.py:48 ../plugin.py:55 ../plugin.py:62
 msgid "Front Processor"
 msgstr "Ön İşlemci"
 
+#: ../plugin.py:782
 msgid "No selected binary data!!"
 msgstr "Seçimiş binary bilgisi yok!!"
 
+#: ../plugin.py:372
 msgid "Status : 0%"
 msgstr "Durum : %0"
 
+#: ../plugin.py:410
 msgid "Success. Press OK to exit."
 msgstr "Başarılı. Çıkmak için OK'a basın."
 
+#: ../plugin.py:723
 msgid "Upgrade"
 msgstr "Yükselt"
 
+#: ../plugin.py:878
 msgid "Upgrade Firmware.."
 msgstr "Yazılım güncelle"
 
+#: ../plugin.py:55
 msgid "VFD Controller"
 msgstr "VFD Kontrol Cihazı"
 
+#: ../plugin.py:512 ../plugin.py:516
 msgid "You choose the incorrect file. "
 msgstr "Yanlış dosyayı seçtiniz"

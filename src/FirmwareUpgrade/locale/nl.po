@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ViX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: 2018-07-31 07:39+0200\n"
 "Last-Translator: Rob van der Does <RobvanderDoes@Gmail.com>\n"
 "Language-Team: Andy Blackburn, Rob van der Does\n"
@@ -18,46 +18,61 @@ msgstr ""
 "X-Generator: Poedit 2.1.1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
+#: ../plugin.py:407
 #, python-format
 msgid "%d / 100"
 msgstr "%d / 100"
 
+#: ../plugin.py:370
 msgid "Can't cancel during upgrade!!"
 msgstr "Kan tijdens de upgrade niet annuleren!"
 
+#: ../plugin.py:520
 msgid "Can't find /usr/bin/md5sum"
 msgstr "Kan /usr/bin/md5sum niet vinden"
 
+#: ../plugin.py:501
 msgid "Can't found MD5 file."
 msgstr "Kan MD5 bestand niet vinden."
 
+#: ../plugin.py:498
 msgid "Can't found binary file."
 msgstr "Kan binary-bestand niet vinden."
 
+#: ../plugin.py:789
 msgid "Can't found device file!!"
 msgstr "Kan apparaatbestand niet vinden!!"
 
+#: ../plugin.py:637
 msgid "Can't found model name."
 msgstr "Kan modelnaam niet vinden."
 
+#: ../plugin.py:710
 msgid "Close"
 msgstr "Sluit"
 
+#: ../plugin.py:439
 msgid "Do you want to remove binary data?"
 msgstr "Wilt u de binary gegevens verwijderen?"
 
+#: ../plugin.py:457
 msgid "Download"
 msgstr "Download"
 
+#: ../plugin.py:721
 msgid "Duo/Solo was not support."
 msgstr "Duo/Solo worden niet ondersteund."
 
+#: ../plugin.py:34 ../plugin.py:41 ../plugin.py:48 ../plugin.py:55
+#: ../plugin.py:62
 msgid "FPGA"
 msgstr "FPGA"
 
+#: ../plugin.py:405
 msgid "Fail to upgrade!! Retry!!"
 msgstr "Upgrade mislukt!! Probeer het opnieuw!!"
 
+#: ../plugin.py:527
 #, python-format
 msgid ""
 "Fail to verify data file. \n"
@@ -68,35 +83,46 @@ msgstr ""
 "file[%s]\n"
 "md5[%s]"
 
+#: ../plugin.py:731
 msgid "Firmware"
 msgstr "Firmware"
 
+#: ../plugin.py:878
 msgid "Firmware Upgrade"
 msgstr "Firmware Upgrade"
 
+#: ../plugin.py:598
 msgid "Firmware does not exist."
 msgstr "Firmware bestaat niet."
 
+#: ../plugin.py:34 ../plugin.py:48 ../plugin.py:55 ../plugin.py:62
 msgid "Front Processor"
 msgstr "Frontprocessor"
 
+#: ../plugin.py:782
 msgid "No selected binary data!!"
 msgstr "Geen binary data geselecteerd!!"
 
+#: ../plugin.py:372
 msgid "Status : 0%"
 msgstr "Status : 0%"
 
+#: ../plugin.py:410
 msgid "Success. Press OK to exit."
 msgstr "Geslaagd. Druk op OK om af te sluiten."
 
+#: ../plugin.py:723
 msgid "Upgrade"
 msgstr "Upgrade"
 
+#: ../plugin.py:878
 msgid "Upgrade Firmware.."
 msgstr "Upgrade Firmware.."
 
+#: ../plugin.py:55
 msgid "VFD Controller"
 msgstr "VFD-controller"
 
+#: ../plugin.py:512 ../plugin.py:516
 msgid "You choose the incorrect file. "
 msgstr "U hebt het verkeerde bestand gekozen."
